@@ -4,6 +4,7 @@
 /* Navbar 01 */
 /* Navbar 02 */
 /* Navbar Text */
+/* Content Text */
 /* ---------------------------------------------------
     GENERAL STYLE
 ----------------------------------------------------- */
@@ -13,12 +14,13 @@ body {
   background: #fafafa;
 }
 
-p {
+p,
+.paragraphList {
   font-family: "Poppins", sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
-  color: #999;
+  color: dimgray;
 }
 
 a,
@@ -88,7 +90,8 @@ img {
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
+  padding-left: 10px;
+  padding-top: 20px;
   background: #539976;
   min-height: 80px;
 }
@@ -168,7 +171,9 @@ ul.CTAs a {
 }
 
 .inside-content {
-  padding: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 30px;
 }
 
 /* ---------------------------------------------------
