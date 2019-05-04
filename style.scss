@@ -8,6 +8,11 @@ $color02: rgb(93, 163, 128);    /* Navbar 02 */
 $color03: black;                /* Navbar Text */
 $color04: rgb(105, 105, 105);   /* Content Text */
 
+/* Inheritance */
+%font-family01 {
+    font-family: 'Poppins', sans-serif;
+  }
+
 /* ---------------------------------------------------
     GENERAL STYLE
 ----------------------------------------------------- */
@@ -15,13 +20,13 @@ $color04: rgb(105, 105, 105);   /* Content Text */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 body {
-    font-family: 'Poppins', sans-serif;
+    @extend %font-family01;
     background: #fafafa;
 }
 
 p,
 .paragraphList {
-    font-family: 'Poppins', sans-serif;
+    @extend %font-family01;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -95,39 +100,42 @@ img {
     margin-left: -250px;
 }
 
-#sidebar .sidebar-header {
-    padding-left: 10px;
-    padding-top: 20px;
-    background: $color01;
-    min-height: 80px;
-}
+/* SCSS Nesting */
+#sidebar {
+    .sidebar-header {
+        padding-left: 10px;
+        padding-top: 20px;
+        background: $color01;
+        min-height: 80px;
+    }
 
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
+    ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid #47748b;
+    }
 
-#sidebar ul p {
-    color: $color03;
-    padding: 10px;
-}
+    ul p {
+        color: $color03;
+        padding: 10px;
+    }
 
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
+    ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
 
-#sidebar ul li a:hover {
-    color: $color02;
-    background: #fff;
-}
+    ul li a:hover {
+        color: $color02;
+        background: #fff;
+    }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: $color03;
-    background: $color01;
-}
+    ul li.active>a,
+    a[aria-expanded="true"] {
+        color: $color03;
+        background: $color01;
+    }
+} 
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -210,7 +218,7 @@ ul.CTAs a {
 ----------------------------------------------------- */
 
 th {
-    font-family: 'Poppins', sans-serif;
+    @extend %font-family01;
     font-size: 1em;
     line-height: 1.7em;
     color: $color03 ;

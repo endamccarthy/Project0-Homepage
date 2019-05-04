@@ -5,18 +5,22 @@
 /* Navbar 02 */
 /* Navbar Text */
 /* Content Text */
+/* Inheritance */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+th, p,
+.paragraphList, body {
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------------
     GENERAL STYLE
 ----------------------------------------------------- */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-  font-family: "Poppins", sans-serif;
   background: #fafafa;
 }
 
 p,
 .paragraphList {
-  font-family: "Poppins", sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
@@ -89,36 +93,32 @@ img {
   margin-left: -250px;
 }
 
+/* SCSS Nesting */
 #sidebar .sidebar-header {
   padding-left: 10px;
   padding-top: 20px;
   background: #539976;
   min-height: 80px;
 }
-
 #sidebar ul.components {
   padding: 20px 0;
   border-bottom: 1px solid #47748b;
 }
-
 #sidebar ul p {
   color: black;
   padding: 10px;
 }
-
 #sidebar ul li a {
   padding: 10px;
   font-size: 1.1em;
   display: block;
 }
-
 #sidebar ul li a:hover {
   color: #5da380;
   background: #fff;
 }
-
 #sidebar ul li.active > a,
-a[aria-expanded=true] {
+#sidebar a[aria-expanded=true] {
   color: black;
   background: #539976;
 }
@@ -201,10 +201,9 @@ ul.CTAs a {
   }
 }
 /* ---------------------------------------------------
-    SKILLS TABLE STYLE
+    RESULTS TABLE STYLE
 ----------------------------------------------------- */
 th {
-  font-family: "Poppins", sans-serif;
   font-size: 1em;
   line-height: 1.7em;
   color: black;
