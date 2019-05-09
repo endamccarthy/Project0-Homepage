@@ -13,3 +13,4 @@ A .scss file is used for styling. This is converted to .css by typing the follow
 <em>sass style.scss style.css</em></br>
 
 The website is also fully mobile responsive.
+
