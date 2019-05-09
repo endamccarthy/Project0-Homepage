@@ -7,6 +7,7 @@ $color01: rgb(83, 153, 118);    /* Navbar 01 */
 $color02: rgb(93, 163, 128);    /* Navbar 02 */
 $color03: black;                /* Navbar Text */
 $color04: rgb(105, 105, 105);   /* Content Text */
+$color05: rgb(111, 102, 163);   /* Icons */
 
 /* Inheritance */
 %font-family01 {
@@ -227,4 +228,20 @@ th {
 
 .table-header {
     font-size: 1.5em;
+}
+
+/* ---------------------------------------------------
+    FONT AWESOME ICONS STYLE
+----------------------------------------------------- */
+
+.fa-github-square {
+    color: $color05;
+}
+
+.fa-linkedin {
+    color: $color05;
+}
+
+.fa-envelope-square {
+    color: $color05;
 }

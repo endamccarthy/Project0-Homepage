@@ -5,6 +5,7 @@
 /* Navbar 02 */
 /* Navbar Text */
 /* Content Text */
+/* Icons */
 /* Inheritance */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 th, p,
@@ -212,6 +213,21 @@ th {
 
 .table-header {
   font-size: 1.5em;
+}
+
+/* ---------------------------------------------------
+    FONT AWESOME ICONS STYLE
+----------------------------------------------------- */
+.fa-github-square {
+  color: #6f66a3;
+}
+
+.fa-linkedin {
+  color: #6f66a3;
+}
+
+.fa-envelope-square {
+  color: #6f66a3;
 }
 
 /*# sourceMappingURL=style.css.map */
