@@ -1,4 +1,7 @@
-# Project 0 - May 2019
+## Project 0 - Homepage
+### Enda McCarthy
+#### Web Programming with Python and JavaScript
+#### May 2019
 
 <h3>Harvard CS50  - Web Programming with Python and JavaScript</br></br></h3>
 
